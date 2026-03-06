@@ -1,0 +1,46 @@
+{
+	"TaskName": "ssvep",
+	"Manufacturer": "Electrical Geodesics",
+	"PowerLineFrequency": 50.0,
+	"SamplingFrequency": 128.0,
+	"SoftwareFilters": {
+		"preprocessing_steps": {
+			"Description": "bandpass filtering (5-48 Hz), notch filtering (50 Hz), artifact removal (AMUSE, ICA), Common Average Reference (CAR)"
+		}
+	},
+	"RecordingDuration": 197.9921875,
+	"RecordingType": "continuous",
+	"EEGReference": "CAR",
+	"EEGGround": "n/a",
+	"EEGPlacementScheme": "10-20 system",
+	"EEGChannelCount": 14,
+	"EOGChannelCount": 0,
+	"ECGChannelCount": 0,
+	"EMGChannelCount": 0,
+	"TriggerChannelCount": 0,
+	"ManufacturersModelName": "EGI 300 Geodesic EEG System (GES 300)",
+	"SoftwareVersions": "Microsoft Visual Studio 2010 with OpenGL",
+	"CapManufacturer": "EGI",
+	"CapManufacturersModelName": "HydroCel Geodesic Sensor Net (HCGSN)",
+	"HardwareFilters": {
+		"Bandpass": {
+			"low_cutoff_hz": 5.0,
+			"high_cutoff_hz": 48.0,
+			"Type": "IIR (Chebyshev, Elliptic)"
+		},
+		"Notch": {
+			"CutoffFrequency": [
+				50.0
+			]
+		}
+	},
+	"TaskDescription": "Subjects focus attention on a violet box flickering at different frequencies (6.66, 7.50, 8.57, 10.00, 12.00 Hz) presented at the center of the monitor. Each trial lasts 5 seconds followed by 5 seconds rest. Trial duration: 5.0s, stimulus frequencies: [6.66, 7.5, 8.57, 10.0, 12.0] Hz.",
+	"Instructions": "Subjects were instructed to focus attention on the flickering stimulus and minimize artifacts by reducing eye blinks and movements.",
+	"InstitutionName": "Centre for Research and Technology Hellas (CERTH)",
+	"InstitutionAddress": "Greece",
+	"InstitutionalDepartmentName": "n/a",
+	"SubjectArtefactDescription": "Impedance kept below 80.0 kOhm",
+	"DeviceSerialNumber": "n/a",
+	"Description": "Comparative evaluation of state-of-the-art algorithms for SSVEP-based BCIs. Dataset includes 256-channel EEG signals from 11 subjects performing SSVEP tasks with 5 different flickering frequencies.",
+	"MISCChannelCount": 0
+}

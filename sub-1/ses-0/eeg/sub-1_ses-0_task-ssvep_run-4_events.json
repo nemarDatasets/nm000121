@@ -1,0 +1,33 @@
+{
+	"onset": {
+		"Description": "Onset (in seconds) of the event from the beginning of the first datapoint. Negative onsets account for events before the first stored data point.",
+		"Units": "s"
+	},
+	"duration": {
+		"Description": "Duration of the event in seconds from onset. Must be zero, positive, or 'n/a' if unavailable. A zero value indicates an impulse event. ",
+		"Units": "s"
+	},
+	"sample": {
+		"Description": "The event onset time in number of sampling points.First sample is 0."
+	},
+	"value": {
+		"Description": "The event code (also known as trigger code or event ID) associated with the event."
+	},
+	"trial_type": {
+		"Description": "The type, category, or name of the event.",
+		"HED": {
+			"6.66": "Sensory-event, Experimental-stimulus, Visual-presentation, (Label/6_66)",
+			"7.50": "Sensory-event, Experimental-stimulus, Visual-presentation, (Label/7_50)",
+			"8.57": "Sensory-event, Experimental-stimulus, Visual-presentation, (Label/8_57)",
+			"10.00": "Sensory-event, Experimental-stimulus, Visual-presentation, (Label/10_00)",
+			"12.00": "Sensory-event, Experimental-stimulus, Visual-presentation, (Label/12_00)"
+		}
+	},
+	"Description": "Event annotations for ssvep task (10.00, 12.00, 6.66, 7.50, 8.57).",
+	"StimulusPresentation": {
+		"display": "22 inch LCD monitor, 60 Hz refresh rate, 1680x1080 resolution",
+		"background": "black",
+		"stimulus": "violet box flickering at center of screen",
+		"graphics": "Nvidia GeForce GTX 860M with vertical synchronization enabled"
+	}
+}
