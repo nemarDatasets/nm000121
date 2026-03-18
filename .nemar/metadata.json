@@ -1,0 +1,100 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "enriched",
+  "authors": {
+    "Vangelis P. Oikonomou": {},
+    "Georgios Liaros": {},
+    "Kostantinos Georgiadis": {},
+    "Elisavet Chatzilari": {},
+    "Katerina Adam": {},
+    "Spiros Nikolopoulos": {},
+    "Ioannis Kompatsiaris": {}
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.48550/arXiv.1602.00904",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.6084/m9.figshare.2068677.v1",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000121",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000121",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    }
+  ],
+  "title": "SSVEP MAMEM 3 dataset",
+  "license": "ODC-By-1.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "125.1 MB (112 files)"
+  ],
+  "formats": [
+    ".html",
+    ".json",
+    ".md",
+    ".set",
+    ".tsv",
+    ".yaml",
+    ".yml"
+  ],
+  "description": "This dataset comprises 14-channel EEG recordings from 11 healthy subjects performing steady-state visual evoked potential (SSVEP) tasks with five flickering frequencies (6.66–12.00 Hz). The dataset supports comparative evaluation of signal processing algorithms for SSVEP-based brain-computer interfaces, including filtering, artifact removal, feature extraction, and classification methods. Preprocessed data and comprehensive documentation enable reproducible benchmarking of BCI algorithms.",
+  "methods_description": "EEG data were acquired using an EGI 300 Geodesic EEG System at 128 Hz sampling rate from 14 scalp electrodes in 10-20 montage (AF3, AF4, F3, F4, F7, F8, FC5, FC6, O1, O2, P7, P8, T7, T8). Subjects attended to a violet flickering box presented on a 22-inch LCD monitor (60 Hz refresh rate) at one of five frequencies per trial. Each 5-second trial was followed by 5 seconds of rest. Data were preprocessed with bandpass filtering (5–48 Hz), 50 Hz notch filtering, and artifact removal using AMUSE and ICA. Common Average Reference was applied for re-referencing. Comparative evaluation of state-of-the-art algorithms was performed using leave-one-subject-out cross-validation, examining filtering methods (IIR, FIR), artifact removal techniques (AMUSE, ICA), feature extraction methods (Periodogram, Welch, Goertzel, Yule-AR, STFT, DWT), feature selection (Shannon entropy, PCA, ICA), and classification algorithms (LDA, SVM, kNN, Naive Bayes, Random Forest, CCA, ELM, Decision Trees).",
+  "keywords": [
+    {
+      "term": "SSVEP"
+    },
+    {
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "visual evoked potentials"
+    },
+    {
+      "term": "signal processing"
+    },
+    {
+      "term": "comparative evaluation"
+    },
+    {
+      "term": "artifact removal"
+    },
+    {
+      "term": "preprocessed"
+    },
+    {
+      "term": "benchmark"
+    },
+    {
+      "term": "MAMEM"
+    }
+  ],
+  "source_hash": "f6283cbfdfb6f53c817e2da9070a559edbbd0d725295c0788fa32a9189bbb893"
+}
