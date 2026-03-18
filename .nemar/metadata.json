@@ -1,6 +1,11 @@
 {
   "version": "2.0",
   "pipeline_stage": "enriched",
+  "title": "Oikonomou2016 – SSVEP MAMEM 3 dataset",
+  "description": "This dataset comprises 14-channel EEG recordings from 11 healthy subjects performing a steady-state visually evoked potential (SSVEP) brain-computer interface task. Subjects attended to flickering visual stimuli presented at five different frequencies (6.66, 7.50, 8.57, 10.00, and 12.00 Hz) while EEG signals were recorded at 128 Hz using an EGI 300 Geodesic EEG System. The dataset includes preprocessed signals with bandpass filtering, artifact removal, and common average referencing, along with comprehensive documentation of signal processing pipelines and comparative evaluation of state-of-the-art BCI algorithms.",
+  "methods_description": "EEG signals were acquired using an EGI 300 Geodesic EEG System (GES 300) with 14 scalp electrodes arranged in a 10-20 montage at 128 Hz sampling rate. Preprocessing included bandpass filtering (5-48 Hz), 50 Hz notch filtering, artifact removal using AMUSE and ICA, and common average referencing. Subjects performed SSVEP tasks with 5-second stimulus presentation periods separated by 5-second rest intervals. Each subject completed one adaptation period followed by five experimental sessions. Comparative evaluation of state-of-the-art algorithms was performed using leave-one-subject-out cross-validation, examining filtering methods (IIR, FIR), artifact removal techniques (AMUSE, ICA), feature extraction methods (Periodogram, Welch, Goertzel, Yule-AR, STFT, DWT), feature selection approaches (Shannon entropy, PCA, ICA), and multiple classifiers (LDA, SVM, kNN, Naive Bayes, Random Forest, CCA, ELM, Decision Trees).",
+  "license": "ODC-By-1.0",
+  "dataset_type": "derivative",
   "authors": {
     "Vangelis P. Oikonomou": {},
     "Georgios Liaros": {},
@@ -10,6 +15,29 @@
     "Spiros Nikolopoulos": {},
     "Ioannis Kompatsiaris": {}
   },
+  "keywords": [
+    {
+      "term": "SSVEP"
+    },
+    {
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "visual evoked potentials"
+    },
+    {
+      "term": "signal processing"
+    },
+    {
+      "term": "feature extraction"
+    },
+    {
+      "term": "classification algorithms"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.48550/arXiv.1602.00904",
@@ -42,14 +70,11 @@
       "relation_type": "References"
     }
   ],
-  "title": "SSVEP MAMEM 3 dataset",
-  "license": "ODC-By-1.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
     "125.1 MB (112 files)"
   ],
@@ -62,39 +87,5 @@
     ".yaml",
     ".yml"
   ],
-  "description": "This dataset comprises 14-channel EEG recordings from 11 healthy subjects performing steady-state visual evoked potential (SSVEP) tasks with five flickering frequencies (6.66–12.00 Hz). The dataset supports comparative evaluation of signal processing algorithms for SSVEP-based brain-computer interfaces, including filtering, artifact removal, feature extraction, and classification methods. Preprocessed data and comprehensive documentation enable reproducible benchmarking of BCI algorithms.",
-  "methods_description": "EEG data were acquired using an EGI 300 Geodesic EEG System at 128 Hz sampling rate from 14 scalp electrodes in 10-20 montage (AF3, AF4, F3, F4, F7, F8, FC5, FC6, O1, O2, P7, P8, T7, T8). Subjects attended to a violet flickering box presented on a 22-inch LCD monitor (60 Hz refresh rate) at one of five frequencies per trial. Each 5-second trial was followed by 5 seconds of rest. Data were preprocessed with bandpass filtering (5–48 Hz), 50 Hz notch filtering, and artifact removal using AMUSE and ICA. Common Average Reference was applied for re-referencing. Comparative evaluation of state-of-the-art algorithms was performed using leave-one-subject-out cross-validation, examining filtering methods (IIR, FIR), artifact removal techniques (AMUSE, ICA), feature extraction methods (Periodogram, Welch, Goertzel, Yule-AR, STFT, DWT), feature selection (Shannon entropy, PCA, ICA), and classification algorithms (LDA, SVM, kNN, Naive Bayes, Random Forest, CCA, ELM, Decision Trees).",
-  "keywords": [
-    {
-      "term": "SSVEP"
-    },
-    {
-      "term": "brain-computer interface"
-    },
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "visual evoked potentials"
-    },
-    {
-      "term": "signal processing"
-    },
-    {
-      "term": "comparative evaluation"
-    },
-    {
-      "term": "artifact removal"
-    },
-    {
-      "term": "preprocessed"
-    },
-    {
-      "term": "benchmark"
-    },
-    {
-      "term": "MAMEM"
-    }
-  ],
-  "source_hash": "f6283cbfdfb6f53c817e2da9070a559edbbd0d725295c0788fa32a9189bbb893"
+  "source_hash": "f2c7d095f7a24582057d2b7a0c9839312b8f53b032c9cb9554e1971caaf1d408"
 }
