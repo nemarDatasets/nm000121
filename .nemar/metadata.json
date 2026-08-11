@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Oikonomou2016 – SSVEP MAMEM 3 dataset",
-  "description": "This dataset comprises 14-channel EEG recordings from 11 healthy subjects performing a steady-state visually evoked potential (SSVEP) brain-computer interface task. Subjects attended to flickering visual stimuli presented at five different frequencies (6.66, 7.50, 8.57, 10.00, and 12.00 Hz) while EEG signals were recorded at 128 Hz using an EGI 300 Geodesic EEG System. The dataset includes preprocessed signals with bandpass filtering, artifact removal, and common average referencing, along with comprehensive documentation of signal processing pipelines and comparative evaluation of state-of-the-art BCI algorithms.",
-  "methods_description": "EEG signals were acquired using an EGI 300 Geodesic EEG System (GES 300) with 14 scalp electrodes arranged in a 10-20 montage at 128 Hz sampling rate. Preprocessing included bandpass filtering (5-48 Hz), 50 Hz notch filtering, artifact removal using AMUSE and ICA, and common average referencing. Subjects performed SSVEP tasks with 5-second stimulus presentation periods separated by 5-second rest intervals. Each subject completed one adaptation period followed by five experimental sessions. Comparative evaluation of state-of-the-art algorithms was performed using leave-one-subject-out cross-validation, examining filtering methods (IIR, FIR), artifact removal techniques (AMUSE, ICA), feature extraction methods (Periodogram, Welch, Goertzel, Yule-AR, STFT, DWT), feature selection approaches (Shannon entropy, PCA, ICA), and multiple classifiers (LDA, SVM, kNN, Naive Bayes, Random Forest, CCA, ELM, Decision Trees).",
+  "description": "This dataset comprises 14-channel EEG recordings from 11 healthy subjects performing a steady-state visually evoked potential (SSVEP) brain-computer interface task with five flickering stimuli at frequencies of 6.66, 7.50, 8.57, 10.00, and 12.00 Hz presented sequentially at the center of the screen. The dataset was collected to enable comparative evaluation of state-of-the-art signal processing algorithms for SSVEP-based BCIs, including filtering, artifact removal, feature extraction, and classification methods. EEG signals were recorded using an Emotiv EPOC wireless headset with 14-channel scalp electrodes at 128 Hz sampling rate. The dataset contains preprocessed data including bandpass filtering (5-48 Hz), notch filtering (50 Hz), artifact removal via AMUSE and ICA, and common average reference (CAR) re-referencing.",
+  "methods_description": "EEG signals were acquired using an Emotiv EPOC wireless headset with 14-channel scalp electrodes at 128 Hz sampling rate. Subjects performed a visual attention task focusing on a flickering box at specified frequencies over 5-second trials separated by 5-second rest periods. Each subject completed one adaptation period followed by five experimental sessions. Preprocessing steps included bandpass filtering (5-48 Hz), 50 Hz notch filtering, artifact removal using AMUSE and ICA, and common average reference (CAR) re-referencing.",
   "license": "ODC-By-1.0",
   "dataset_type": "derivative",
   "authors": {
@@ -36,6 +36,15 @@
     },
     {
       "term": "classification algorithms"
+    },
+    {
+      "term": "MAMEM"
+    },
+    {
+      "term": "benchmarking"
+    },
+    {
+      "term": "comparative evaluation"
     }
   ],
   "related_identifiers": [
@@ -55,11 +64,6 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000121",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.21105/joss.01896",
       "identifier_type": "DOI",
       "relation_type": "References"
@@ -68,6 +72,11 @@
       "identifier": "10.1038/s41597-019-0104-8",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000121",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_general": "Dataset",
@@ -76,7 +85,7 @@
     "eeg"
   ],
   "sizes": [
-    "125.1 MB (112 files)"
+    "290.0 MB (233 files)"
   ],
   "formats": [
     ".html",
@@ -87,5 +96,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "f2c7d095f7a24582057d2b7a0c9839312b8f53b032c9cb9554e1971caaf1d408"
+  "source_hash": "12a923ab6c86de2aad7bafc283e30d83bc62e625f48de2746b26bdff8756d2d8"
 }
