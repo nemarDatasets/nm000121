@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Oikonomou2016 – SSVEP MAMEM 3 dataset",
-  "description": "This dataset comprises 14-channel EEG recordings from 11 healthy subjects performing a steady-state visually evoked potential (SSVEP) brain-computer interface task with five flickering stimuli at frequencies of 6.66, 7.50, 8.57, 10.00, and 12.00 Hz presented sequentially at the center of the screen. The dataset was collected to enable comparative evaluation of state-of-the-art signal processing algorithms for SSVEP-based BCIs, including filtering, artifact removal, feature extraction, and classification methods. EEG signals were recorded using an Emotiv EPOC wireless headset with 14-channel scalp electrodes at 128 Hz sampling rate. The dataset contains preprocessed data including bandpass filtering (5-48 Hz), notch filtering (50 Hz), artifact removal via AMUSE and ICA, and common average reference (CAR) re-referencing.",
-  "methods_description": "EEG signals were acquired using an Emotiv EPOC wireless headset with 14-channel scalp electrodes at 128 Hz sampling rate. Subjects performed a visual attention task focusing on a flickering box at specified frequencies over 5-second trials separated by 5-second rest periods. Each subject completed one adaptation period followed by five experimental sessions. Preprocessing steps included bandpass filtering (5-48 Hz), 50 Hz notch filtering, artifact removal using AMUSE and ICA, and common average reference (CAR) re-referencing.",
+  "description": "A comparative evaluation dataset of steady-state visually evoked potential (SSVEP) based brain-computer interfaces, comprising 14-channel EEG recordings from 11 healthy subjects performing attention tasks on flickering visual stimuli at five different frequencies (6.66–12.00 Hz). The dataset includes preprocessed signals, artifact annotations, and comprehensive documentation of signal processing pipelines for benchmarking state-of-the-art BCI algorithms. EEG signals were acquired using an EGI 300 Geodesic EEG System (GES 300) with 14 channels at 128 Hz sampling rate.",
+  "methods_description": "EEG signals were acquired using an EGI 300 Geodesic EEG System (GES 300) with 14 channels at 128 Hz sampling rate. Subjects focused on magenta boxes flickering at frequencies of 6.66, 7.50, 8.57, 10.00, and 12.00 Hz presented on a 22-inch LCD monitor. Each trial lasted 5 seconds followed by 5 seconds of rest. Preprocessing included bandpass filtering (5–48 Hz), notch filtering (50 Hz), artifact removal using AMUSE and ICA, and common average reference (CAR) re-referencing. The study employed leave-one-subject-out cross-validation to evaluate state-of-the-art algorithms for filtering, artifact removal, feature extraction, feature selection, and classification.",
   "license": "ODC-By-1.0",
   "dataset_type": "derivative",
   "authors": {
@@ -32,19 +32,16 @@
       "term": "signal processing"
     },
     {
-      "term": "feature extraction"
-    },
-    {
-      "term": "classification algorithms"
-    },
-    {
-      "term": "MAMEM"
-    },
-    {
-      "term": "benchmarking"
-    },
-    {
       "term": "comparative evaluation"
+    },
+    {
+      "term": "benchmark"
+    },
+    {
+      "term": "preprocessing"
+    },
+    {
+      "term": "artifact removal"
     }
   ],
   "related_identifiers": [
@@ -96,5 +93,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "12a923ab6c86de2aad7bafc283e30d83bc62e625f48de2746b26bdff8756d2d8"
+  "source_hash": "3fd57534106de1dbc5cee3cc46c551cbbfde11e49bf534eb294b93a0fea1d1c0"
 }
