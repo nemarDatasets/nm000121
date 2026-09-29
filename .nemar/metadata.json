@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Oikonomou2016 – SSVEP MAMEM 3 dataset",
-  "description": "A comparative evaluation dataset of steady-state visually evoked potential (SSVEP) based brain-computer interfaces, comprising 14-channel EEG recordings from 11 healthy subjects performing attention tasks on flickering visual stimuli at five different frequencies (6.66–12.00 Hz). The dataset includes preprocessed signals, artifact annotations, and comprehensive documentation of signal processing pipelines for benchmarking state-of-the-art BCI algorithms. EEG signals were acquired using an EGI 300 Geodesic EEG System (GES 300) with 14 channels at 128 Hz sampling rate.",
-  "methods_description": "EEG signals were acquired using an EGI 300 Geodesic EEG System (GES 300) with 14 channels at 128 Hz sampling rate. Subjects focused on magenta boxes flickering at frequencies of 6.66, 7.50, 8.57, 10.00, and 12.00 Hz presented on a 22-inch LCD monitor. Each trial lasted 5 seconds followed by 5 seconds of rest. Preprocessing included bandpass filtering (5–48 Hz), notch filtering (50 Hz), artifact removal using AMUSE and ICA, and common average reference (CAR) re-referencing. The study employed leave-one-subject-out cross-validation to evaluate state-of-the-art algorithms for filtering, artifact removal, feature extraction, feature selection, and classification.",
+  "description": "This dataset contains 14-channel Emotiv EPOC EEG recordings from healthy, BCI-naive participants performing an SSVEP task (MAMEM SSVEP dataset III). Participants attended to flickering boxes at five stimulation frequencies (6.66, 7.50, 8.57, 10.00 and 12.00 Hz), presented simultaneously. The data were band-pass and notch filtered, cleaned of artifacts and re-referenced to the common average. They support comparative evaluation of filtering, artifact removal, feature extraction and classification algorithms for SSVEP-based brain-computer interfaces.",
+  "methods_description": "EEG was recorded at 128 Hz from 14 scalp channels while participants viewed flickering violet boxes on a 22-inch LCD monitor at 60 Hz refresh rate. Each session contained 5-second flickering windows separated by 5-second rests, preceded by a single adaptation period. Preprocessing comprised 5-48 Hz band-pass filtering, 50 Hz notch filtering, artifact removal (AMUSE, ICA) and common average referencing.",
   "license": "ODC-By-1.0",
   "dataset_type": "derivative",
   "authors": {
@@ -20,10 +20,10 @@
       "term": "SSVEP"
     },
     {
-      "term": "brain-computer interface"
+      "term": "EEG"
     },
     {
-      "term": "EEG"
+      "term": "brain-computer interface"
     },
     {
       "term": "visual evoked potentials"
@@ -33,15 +33,6 @@
     },
     {
       "term": "comparative evaluation"
-    },
-    {
-      "term": "benchmark"
-    },
-    {
-      "term": "preprocessing"
-    },
-    {
-      "term": "artifact removal"
     }
   ],
   "related_identifiers": [
@@ -53,7 +44,7 @@
     {
       "identifier": "10.6084/m9.figshare.2068677.v1",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsDerivedFrom"
     },
     {
       "identifier": "https://github.com/nemarDatasets/nm000121",
@@ -82,7 +73,7 @@
     "eeg"
   ],
   "sizes": [
-    "290.0 MB (233 files)"
+    "277 MB (233 files)"
   ],
   "formats": [
     ".html",
