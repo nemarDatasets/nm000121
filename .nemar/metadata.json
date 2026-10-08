@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Oikonomou2016 – SSVEP MAMEM 3 dataset",
-  "description": "This dataset contains 14-channel Emotiv EPOC EEG recordings from healthy, BCI-naive participants performing an SSVEP task (MAMEM SSVEP dataset III). Participants attended to flickering boxes at five stimulation frequencies (6.66, 7.50, 8.57, 10.00 and 12.00 Hz), presented simultaneously. The data were band-pass and notch filtered, cleaned of artifacts and re-referenced to the common average. They support comparative evaluation of filtering, artifact removal, feature extraction and classification algorithms for SSVEP-based brain-computer interfaces.",
-  "methods_description": "EEG was recorded at 128 Hz from 14 scalp channels while participants viewed flickering violet boxes on a 22-inch LCD monitor at 60 Hz refresh rate. Each session contained 5-second flickering windows separated by 5-second rests, preceded by a single adaptation period. Preprocessing comprised 5-48 Hz band-pass filtering, 50 Hz notch filtering, artifact removal (AMUSE, ICA) and common average referencing.",
+  "description": "A steady-state visual evoked potential (SSVEP) EEG dataset from 11 healthy, BCI-naive subjects who focused on boxes flickering at five frequencies (6.66, 7.50, 8.57, 10.00 and 12.00 Hz). Signals were recorded with 14 channels at 128 Hz and preprocessed with bandpass and notch filtering, artifact removal and common average referencing. The dataset supports comparative evaluation of filtering, artifact removal, feature extraction and classification algorithms for SSVEP-based brain-computer interfaces.",
+  "methods_description": "Subjects viewed flickering boxes on a 22-inch LCD monitor, with a yellow arrow marking the target box. Each 5 s flicker window was followed by 5 s of rest, with a single adaptation period before the first of 5 sessions. EEG was recorded at 128 Hz and preprocessed with 5-48 Hz bandpass filtering, 50 Hz notch filtering, AMUSE/ICA artifact removal and common average referencing.",
   "license": "ODC-By-1.0",
   "dataset_type": "derivative",
   "authors": {
@@ -26,7 +26,9 @@
       "term": "brain-computer interface"
     },
     {
-      "term": "visual evoked potentials"
+      "term": "Evoked Potentials, Visual",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005074"
     },
     {
       "term": "signal processing"
@@ -84,5 +86,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "3fd57534106de1dbc5cee3cc46c551cbbfde11e49bf534eb294b93a0fea1d1c0"
+  "source_hash": "89c86804d091ed29f352ed31185339f5630cb205a906d3c3ace3d6858162c09d"
 }
