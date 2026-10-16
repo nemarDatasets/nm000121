@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "Oikonomou2016 – SSVEP MAMEM 3 dataset",
-  "description": "A steady-state visual evoked potential (SSVEP) EEG dataset from 11 healthy, BCI-naive subjects who focused on boxes flickering at five frequencies (6.66, 7.50, 8.57, 10.00 and 12.00 Hz). Signals were recorded with 14 channels at 128 Hz and preprocessed with bandpass and notch filtering, artifact removal and common average referencing. The dataset supports comparative evaluation of filtering, artifact removal, feature extraction and classification algorithms for SSVEP-based brain-computer interfaces.",
-  "methods_description": "Subjects viewed flickering boxes on a 22-inch LCD monitor, with a yellow arrow marking the target box. Each 5 s flicker window was followed by 5 s of rest, with a single adaptation period before the first of 5 sessions. EEG was recorded at 128 Hz and preprocessed with 5-48 Hz bandpass filtering, 50 Hz notch filtering, AMUSE/ICA artifact removal and common average referencing.",
+  "description": "This dataset contains 14-channel Emotiv EPOC EEG recordings from healthy, BCI-naive participants performing a steady-state visual evoked potential (SSVEP) task. Five violet boxes flickered simultaneously at 6.66, 7.50, 8.57, 10.00 and 12.00 Hz while participants focused on a cued target. The recordings come from the MAMEM SSVEP III collection and were used in a comparative evaluation of filtering, artifact removal, feature extraction and classification algorithms for SSVEP-based brain-computer interfaces.",
+  "methods_description": "EEG was sampled at 128 Hz with 14 scalp channels. Each trial was a 5 s flickering window followed by 5 s of rest. Each subject completed a single adaptation period followed by up to 5 sessions of 25 windows each. Preprocessing comprised 5-48 Hz bandpass filtering, a 50 Hz notch filter, artifact removal (AMUSE, ICA) and common average referencing. Stimuli were shown on a 22 inch LCD monitor with a 60 Hz refresh rate.",
   "license": "ODC-By-1.0",
   "dataset_type": "derivative",
   "authors": {
@@ -26,9 +26,7 @@
       "term": "brain-computer interface"
     },
     {
-      "term": "Evoked Potentials, Visual",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D005074"
+      "term": "visual evoked potentials"
     },
     {
       "term": "signal processing"
@@ -86,5 +84,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "89c86804d091ed29f352ed31185339f5630cb205a906d3c3ace3d6858162c09d"
+  "source_hash": "0bcb60b6b6e08805d6c08570941e5ee97bc243624ea86e3e1a8c92b8233b913a"
 }
