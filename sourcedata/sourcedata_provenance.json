@@ -7,8 +7,8 @@
  "upstream_cache_root": "/expanse/lustre/scratch/bpinto/temp_project/sourcedata_staging/mne_data/MNE-mamem3-data",
  "license": "ODC-By-1.0",
  "doi": "10.48550/arXiv.1602.00904",
- "n_files": 121,
- "total_bytes": 164894036,
+ "n_files": 122,
+ "total_bytes": 164929895,
  "files": [
   {
    "file": "27802707",
@@ -735,7 +735,24 @@
    "bytes": 1085236,
    "sha256": "5cc945e01c260246c8b9f36d40c47d97e64c7a1bbb24e111d777811bbf6fb128",
    "subject": "11"
+  },
+  {
+   "file": "figshare_filelist_3413851.json",
+   "bytes": 35859,
+   "sha256": "5841dcd574d0db0a1d54379f33e1592bb4164e5893277077b52c03f9f7c3f7a6",
+   "subject": null,
+   "url": "https://api.figshare.com/v2/articles/3413851/files",
+   "how": "loader index: json.dump(moabb.datasets.download.fs_get_file_list(3413851)), the file MAMEM3._load_or_fetch_filelist() reads from its cache root before calling the figshare API; retrieved 2026-10-16"
   }
  ],
- "n_subjects_recorded": 11
+ "n_subjects_recorded": 11,
+ "revisions": [
+  {
+   "date": "2026-10-16",
+   "version": "1.0.4",
+   "added_files": 1,
+   "added_bytes": 35859,
+   "note": "Added figshare_filelist_3413851.json: json.dump(moabb.datasets.download.fs_get_file_list(3413851)), i.e. exactly the file MAMEM3._load_or_fetch_filelist() writes to its cache root (MNE-mamem3-data/, the upstream_cache_root of this deposit) and reads before calling https://api.figshare.com/v2/articles/3413851/files. Retrieved 2026-10-16 from the figshare API. It lists 123 files; every one of the 121 data files in this deposit appears in it under its id with the same size and the subject the loader derives from the name, and every file the loader requests for subjects 1-11 is in this deposit. Subject-less entry: shared by every subject's load."
+  }
+ ]
 }
